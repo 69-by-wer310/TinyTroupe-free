@@ -302,7 +302,7 @@ class OpenAIClient:
             return num_tokens
         
         except Exception as e:
-            logger.error(f"Error counting tokens: {e}")
+            #logger.error(f"Error counting tokens: {e}")
             return None
 
     def _save_cache(self):
