@@ -345,7 +345,9 @@ class OpenAIClient:
         """
         Sets up the OpenAI API configurations for this client.
         """
-        self.client = OpenAI(api_key="aaa", base_url="https://pollinations.ai/")
+        openai.api_key="aaa"
+        openai.base_url="https://pollinations.ai/"
+        self.client = openai
 
     def send_message(self,
                     current_messages,
